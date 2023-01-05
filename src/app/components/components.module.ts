@@ -10,6 +10,9 @@ import { AgregarexpeComponent } from './agregarexpe/agregarexpe.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    AgregarexpeComponent
   ]
 })
 export class ComponentsModule { }

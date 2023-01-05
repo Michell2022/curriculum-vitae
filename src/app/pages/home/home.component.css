@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+.padre{
+    background: lightseagreen;
+    width: 50%;
+}
+
+.hijo{
+    background: lightcoral;
+    width: 50%;
+}
