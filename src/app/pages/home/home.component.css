@@ -1,15 +1,14 @@
-.container{
+.container-fluit{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
 }
 
 .padre{
     background: lightseagreen;
-    width: 50%;
+    width: 70%;
 }
 
 .hijo{
     background: lightcoral;
-    width: 50%;
+    width: 30%;
 }
