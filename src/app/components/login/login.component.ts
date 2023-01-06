@@ -6,10 +6,13 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
+  // DECLARO MI VARIABLE CONDICION COMO BOOLEANO
   condicion!: boolean;
 
+  // DECLARO LOS MENSAJES QUE SE VERAN EN LOS INPUTS
   datos!: string;
   confirmo!: string;
   minimo: string = " (Debe tener como mínimo 8 caracteres)";
@@ -17,12 +20,14 @@ export class LoginComponent implements OnInit {
   valido: string = " (El email no es válido)";
   textmensaje: string = " (El mensaje no puede quedar vacio)";
 
+  // CON FORMLOGIN ENLAZAMOS NUESTRO FORM
   public formLogin!: FormGroup;
 
+  // CREAMOS NUESTRO CONSTRUCTOR
   constructor(private formBuilder: FormBuilder) {
 
   }
-
+  // CREAMOS EL ngOnInit AQUI SE VERAN LAS VALIDACIONES QUE INGRESE EL USUARIO
   ngOnInit(): void {
     this.formLogin = this.formBuilder.group({
       nombre: ['',
@@ -55,6 +60,8 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  // IMPRIMO LOS DATOS INGRESADOS Y SI ES CORRECTO ENVIARA UN MENSAJE DE DATOS VALIDOS
+  // LOS MENSAJE DE ADVERTENCIA SE BORRARAN SI TODO FUE CORRECTO.
   send(): any {
     this.datos = `Nombre= ${this.formLogin.value.nombre}
                   Apellido= ${this.formLogin.value.apellido}
