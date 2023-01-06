@@ -1,21 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AgregarexpeComponent } from './agregarexpe/agregarexpe.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 
 
 @NgModule({
   declarations: [
-    AgregarexpeComponent,
-    ContactoComponent
+    ContactoComponent,
+    LoginComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
-    AgregarexpeComponent,
-    ContactoComponent
+    ContactoComponent,
+    LoginComponent
   ]
 })
 export class ComponentsModule { }

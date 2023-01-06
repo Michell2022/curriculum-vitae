@@ -1,0 +1,24 @@
+.boton__condicion{
+    padding: 10px 10px 10px 40px;
+    margin-bottom: 30px;
+}
+
+.boton__condicion button,
+.formu__agregar button {
+    background: black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    padding: 5px 25px;
+}
+
+.boton__condicion button:hover,
+.formu__agregar button:hover{
+    background: rgb(48, 48, 48);
+}
+
+@media(max-width:700px){
+    .boton__condicion{
+        padding-left: 15px;
+    }
+}

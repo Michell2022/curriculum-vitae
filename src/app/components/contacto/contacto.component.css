@@ -1,3 +1,65 @@
-#contacto .imagen{
-    text-align: center;
+.imagen img{
+    width: 100%;
+}
+
+.contacto__datos{
+    padding: 40px 15px;
+    
+}
+
+/* DANDO ESTILOS A LOS ICONOS */
+.contacto__datos div i.ubicacion{
+    padding: 8px 10px;
+}
+
+.contacto__datos div > i{
+    color: white;
+    background: #d45319;
+    border: 1px solid #b33b04;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.contacto__datos > div{
+    padding-bottom: 20px;
+}
+
+.contacto__datos span{
+    padding-left: 8px;
+    color: white;
+    font-size: 15px;
+}
+
+@media(max-width:576px){
+
+    .contacto__datos{
+        padding: 40px 5px 40px 10px;
+    }
+
+    .contacto__datos span{
+        font-size: 11px;
+    }
+}
+
+@media(min-width:576px){
+
+    .contacto__datos{
+        padding: 40px 5px 40px 10px;
+    }
+
+    .contacto__datos span{
+        font-size: 13px;
+    }
+}
+
+
+@media(min-width:992px){
+
+    .contacto__datos{
+        padding: 40px 0px 40px 20px;
+    }
+
+    .contacto__datos span{
+        font-size: 16px;
+    }
 }

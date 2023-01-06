@@ -1,14 +1,52 @@
-.container-fluit{
-    display: flex;
-    flex-direction: row;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: auto;
+    padding: 10px 40px;
 }
 
 .padre{
-    background: lightseagreen;
-    width: 70%;
+    background: rgb(241, 241, 241);
+    padding: 10px 100px 10px 40px;
 }
 
 .hijo{
-    background: lightcoral;
-    width: 30%;
+    background: #000;
+}
+
+.titulo__principal h1{
+    font-size: 2rem;
+}
+
+.titulo__principal span{
+    color: rgb(44, 44, 44);
+}
+
+.formacion__perfil p,
+.formacion__academica p,
+.formacion__experiencia p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media(max-width:576px){
+
+    .container{
+        margin: auto;
+        padding: 10px 0px;
+    }
+
+    .row{
+        padding: 15px;
+    }
+
+    .padre{
+        padding: 10px 16px 10px 5px;
+    }
+    
 }

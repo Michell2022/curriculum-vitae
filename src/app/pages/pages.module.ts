@@ -4,14 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 
 
-
 @NgModule({
   declarations: [
     HomeComponent
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
   ]
 })
 export class PagesModule { }
